@@ -5,6 +5,7 @@ if include_email_or_user.lower() == "yes": #if user input == "yes"
     Passwords=input("Enter the password that you would like to save: \n") #Get the user input and store it
     file=open("Password.txt", 'a') # Open/Create new text file called "Password.txt"
     file.write("Email/username: ") # Allow the user to read it more cleaner
+    file.write(Emails) #Write the email/Username to the text file
     file.write("\n") #Add new line
     file.write("Password: ") #Allow the user to read it proprely and more cleaner
     file.write(Passwords) #Saves the password to the text file
